@@ -30,8 +30,10 @@ model, le_crime, le_location = load_models()
 
 # ---------------- LOAD & PREPARE DATA ----------------
 @st.cache_data
+@st.cache_data
 def load_data():
-    df = pd.read_csv('Crimes-2017.csv')
+    url = "https://drive.google.com/uc?export=download&id=14NrkrW-hvXxmxtcjfDyoSGjBWL4PA3xV"
+    df = pd.read_csv(url)
     df['Date'] = pd.to_datetime(df['Date'], format='mixed', errors='coerce')
     df['Month'] = df['Date'].dt.month
     df['Hour'] = df['Date'].dt.hour

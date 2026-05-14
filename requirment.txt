@@ -1,7 +1,7 @@
 streamlit
 pandas
-folium
-streamlit-folium
+folium==0.14.0
+streamlit-folium==0.13.0
 seaborn
 matplotlib
 scikit-learn

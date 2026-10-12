@@ -19,4 +19,5 @@ This project predicts crime arrest probability using Machine Learning and Stream
 
 ```bash
 streamlit run crimeapp.py
+
 ```
